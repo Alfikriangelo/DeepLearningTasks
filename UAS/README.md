@@ -1,4 +1,4 @@
-Berikut adalah analisis dari masing-masing file Jupyter Notebook yang Anda berikan:
+Berikut adalah analisis dari masing-masing file Jupyter Notebook
 
 ### **CHAPTER_1_The_Machine_Learning_Landscape.ipynb**
 
@@ -169,3 +169,123 @@ Notebook ini memberikan pengenalan tentang Jaringan Saraf Tiruan (ANN) menggunak
 * **Menggunakan Callback.**
 * **Menggunakan TensorBoard untuk Visualisasi.**
 * **Fine-Tuning Hyperparameters Neural Network.**
+
+### **CHAPTER_11_Training_Deep_Neural_Networks.ipynb**
+
+Notebook ini membahas masalah-masalah yang sering muncul saat melatih *deep neural networks* (DNN) dan cara mengatasinya.
+
+**Topik utama yang dibahas:**
+
+* **Vanishing/Exploding Gradients Problem:** Menjelaskan masalah gradien yang hilang atau meledak dan solusinya, seperti inisialisasi Xavier dan He.
+* **Fungsi Aktivasi Nonsaturating:** Memperkenalkan berbagai fungsi aktivasi seperti ReLU, Leaky ReLU, ELU, dan SELU.
+* **Batch Normalization:** Menjelaskan cara kerja dan implementasi *Batch Normalization* di Keras.
+* **Gradient Clipping:** Teknik untuk mengatasi gradien yang meledak dengan memotongnya.
+* **Transfer Learning:** Menjelaskan konsep menggunakan kembali lapisan dari model yang sudah ada untuk tugas baru.
+* **Faster Optimizers:** Membahas berbagai *optimizer* yang lebih cepat dari *Gradient Descent* biasa, seperti Momentum, Nesterov Accelerated Gradient, AdaGrad, RMSProp, dan Adam.
+* **Learning Rate Scheduling:** Menjelaskan berbagai strategi untuk menyesuaikan *learning rate* selama pelatihan.
+* **Menghindari Overfitting Melalui Regularisasi:** Membahas berbagai teknik regularisasi seperti ℓ1 dan ℓ2, *dropout*, dan *max-norm*.
+
+### **CHAPTER_12_Custom_Models_and_Training_with_TensorFlow.ipynb**
+
+Notebook ini memberikan pengenalan yang lebih dalam tentang TensorFlow, menunjukkan cara menggunakannya seperti NumPy dan cara membuat model serta *training loop* kustom.
+
+**Topik utama yang dibahas:**
+
+* **Menggunakan TensorFlow seperti NumPy:** Menunjukkan cara membuat dan memanipulasi tensor, serta interoperabilitasnya dengan NumPy.
+* **Model dan Lapisan Kustom:** Menjelaskan cara membuat lapisan, model, dan fungsi kerugian kustom di TensorFlow.
+* ***Training Loop* Kustom:** Menunjukkan cara membuat *training loop* kustom untuk kontrol yang lebih besar atas proses pelatihan.
+* **Fungsi dan Grafik TensorFlow:** Menjelaskan cara kerja `tf.function` untuk mempercepat kode Python.
+
+### **CHAPTER_13_Loading_and_Preprocessing_Data_with_TensorFlow.ipynb**
+
+Notebook ini berfokus pada cara efisien untuk memuat dan memproses data menggunakan TensorFlow.
+
+**Topik utama yang dibahas:**
+
+* **Data API:** Pengenalan `tf.data` API untuk membuat *input pipeline* yang efisien.
+* **TFRecord Format:** Menjelaskan format TFRecord untuk menyimpan dan membaca data dalam jumlah besar.
+* **Preprocessing Input Features:** Menunjukkan cara melakukan pra-pemrosesan fitur menggunakan Keras.
+* **TF Transform:** Pengenalan singkat tentang pustaka `tf.Transform` untuk pra-pemrosesan data.
+* **TensorFlow Datasets (TFDS) Project:** Memperkenalkan proyek TFDS untuk mengunduh dataset standar dengan mudah.
+
+### **CHAPTER_14_Deep_Computer_Vision_Using_Convolutional_Neural_Networks.ipynb**
+
+Notebook ini membahas *Convolutional Neural Networks* (CNN) untuk tugas-tugas *computer vision*.
+
+**Topik utama yang dibahas:**
+
+* **Lapisan Konvolusional:** Menjelaskan cara kerja filter, *stride*, dan *padding*.
+* **Lapisan Pooling:** Membahas *max pooling* dan *average pooling*.
+* **Arsitektur CNN:** Membahas berbagai arsitektur CNN klasik seperti LeNet-5, AlexNet, GoogLeNet, VGGNet, ResNet, Xception, dan DenseNet.
+* **Klasifikasi dan Lokalisasi:** Menjelaskan cara melakukan klasifikasi dan lokalisasi objek dalam gambar.
+* **Deteksi dan Segmentasi Objek:** Pengenalan singkat tentang deteksi objek dan segmentasi.
+
+### **CHAPTER_15_Processing_Sequences_Using_RNNs_and_CNNs.ipynb**
+
+Notebook ini berfokus pada pemrosesan sekuens menggunakan *Recurrent Neural Networks* (RNN) dan CNN.
+
+**Topik utama yang dibahas:**
+
+* **RNN Dasar:** Menjelaskan cara kerja RNN dan cara mengimplementasikannya di Keras.
+* **Melatih RNN:** Membahas tantangan dalam melatih RNN, seperti *vanishing/exploding gradients*.
+* **RNN Lanjutan:** Memperkenalkan sel LSTM dan GRU untuk mengatasi masalah gradien.
+* **Natural Language Processing (NLP):** Menjelaskan cara menggunakan RNN untuk tugas-tugas NLP.
+
+### **CHAPTER_16_Natural_Language_Processing_with_RNNs_and_Attention.ipynb**
+
+Notebook ini melanjutkan pembahasan tentang NLP, dengan fokus pada mekanisme atensi dan model-model canggih.
+
+**Topik utama yang dibahas:**
+
+* **Char-RNN:** Membangkitkan teks Shakespeare menggunakan RNN tingkat karakter.
+* **Analisis Sentimen:** Melakukan analisis sentimen pada ulasan film IMDb.
+* **Encoder-Decoder Network untuk Terjemahan Neural Machine (NMT):** Menjelaskan arsitektur *encoder-decoder* untuk tugas terjemahan.
+* **Mekanisme Atensi:** Memperkenalkan mekanisme atensi untuk meningkatkan kinerja model *encoder-decoder*.
+* **Model Transformer:** Pengenalan arsitektur Transformer yang populer.
+* **Riwayat NLP:** Memberikan gambaran singkat tentang perkembangan NLP.
+
+### **CHAPTER_17_Representation_Learning_and_Generative_Learning_Using_Autoencoders_and_GANs.ipynb**
+
+Notebook ini membahas *representation learning* dan *generative learning* menggunakan *autoencoder* dan *Generative Adversarial Networks* (GAN).
+
+**Topik utama yang dibahas:**
+
+* **Autoencoder:**
+    * PCA dengan *undercomplete linear autoencoder*.
+    * *Stacked Autoencoder*.
+    * *Denoising Autoencoder*.
+    * *Sparse Autoencoder*.
+    * *Variational Autoencoder* (VAE).
+* **Generative Adversarial Networks (GAN):**
+    * Menjelaskan cara kerja GAN.
+    * *Deep Convolutional GAN* (DCGAN).
+    * *Progressive Growing of GANs* (PGAN).
+    * *StyleGAN*.
+
+### **CHAPTER_18_Reinforcement_Learning.ipynb**
+
+Notebook ini memberikan pengenalan tentang *Reinforcement Learning* (RL).
+
+**Topik utama yang dibahas:**
+
+* **Pengenalan OpenAI Gym:** Memperkenalkan OpenAI Gym sebagai lingkungan untuk melatih agen RL.
+* **Strategi Neural Network:** Menjelaskan cara menggunakan *neural network* sebagai kebijakan (*policy*).
+* **Algoritma RL:**
+    * *Policy Gradients*.
+    * *Markov Decision Processes* (MDP).
+    * *Q-Learning* dan *Deep Q-Network* (DQN).
+* **TF-Agents Library:** Pengenalan singkat tentang pustaka TF-Agents untuk RL.
+
+### **CHAPTER_19_Training_and_Deploying_TensorFlow_Models_at_Scale.ipynb**
+
+Notebook ini membahas cara melatih dan menerapkan model TensorFlow dalam skala besar.
+
+**Topik utama yang dibahas:**
+
+* **Menyajikan Model TensorFlow:**
+    * Menggunakan TensorFlow Serving.
+    * Menerapkan model di Google AI Platform.
+* **Menerapkan Model di Perangkat Seluler atau Tertanam.**
+* **Menggunakan GPU untuk Mempercepat Komputasi:** Menjelaskan cara menggunakan GPU tunggal, beberapa GPU pada satu mesin, dan beberapa GPU di beberapa mesin.
+* **Paralelisme Data dan Model.**
+* **Melatih Model di AI Platform.**
